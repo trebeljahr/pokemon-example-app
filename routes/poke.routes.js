@@ -20,7 +20,7 @@ router.get("/", (req, res) => {
 });
 
 router.get("/random", async (req, res) => {
-  const random = Math.floor(Math.random() * 150) + 1;
+  const random = Math.floor(Math.random() * 400) + 1;
   const url = `https://pokeapi.glitch.me/v1/pokemon/${random}`;
   const {
     data: [{ name, sprite: src }],
